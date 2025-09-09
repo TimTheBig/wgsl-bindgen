@@ -1,53 +1,87 @@
 [workspace]
 # wgpu requires the newer resolver
-resolver = "2"
-members = ["wgsl_bindgen", "example"]
+resolver = "3"
+members = ["wesl_bindgen", "example"]
 
 [workspace.package]
-version = "0.21.1"
-authors = ["swoorup", "ScanMountGoat(Original Fork)"]
+version = "0.22.0"
+authors = ["TimTheBig", "swoorup(WGSL Fork)", "ScanMountGoat(Original Fork)"]
 edition = "2021"
-repository = "https://github.com/Swoorup/wgsl_bindgen"
+repository = "https://github.com/TimTheBig/wesl_bindgen"
 license = "MIT"
-documentation = "https://docs.rs/wgsl_bindgen"
+documentation = "https://docs.rs/wesl_bindgen"
 
 [workspace.dependencies]
-blake3 = "1.6"
-bytemuck = "1.13"
-case = "1.0"
-colored = "3.0"
-data-encoding = "2.5"
-educe = "0.6"
-derive_builder = "0.20"
-derive_more = { version = "2.0", features = ["full"] }
-encase = "0.11"
-enumflags2 = "0.7"
-futures = "0.3"
+# hash
+blake3 = "1.8"
 fxhash = "0.2"
-glam = "0.30"
+
+# hashmap
+indexmap = "2.11"
+
+# type cast
+bytemuck = "1.23"
+encase = "0.11"
+
+# str case convertion
+case = "1.0"
 heck = "0.5"
-include_absolute_path = "0.1"
-indexmap = "2.7"
-indoc = "2.0"
-miette = "7.5"
-naga = { version = "25.0", features = ["wgsl-in", "wgsl-out"] }
-naga_oil = "0.18"
-pathdiff = "0.2"
-pretty_assertions = "1.4"
-prettyplease = "0.2"
-proc-macro2 = "1.0"
-quote = "1.0"
-regex = "1.11"
-regex-syntax = "0.8"
-smallvec = "1.14"
-smol_str = "0.3"
+
+# encoding
+data-encoding = "2.9"
+
+# trait derive
+educe = "0.6"
+derive_more = { version = "2.0", features = ["full"] }
+# macros
+derive_builder = "0.20"
 strum = "0.27"
 strum_macros = "0.27"
-syn = "2.0"
-thiserror = "2.0"
-wgpu = "25.0"
-wgpu-types = "25.0"
-winit = "0.30"
+
+# bitflags
+enumflags2 = "0.7"
+
+# async
+futures = "0.3"
+
+# geometry
+glam = "0.30"
+
+# output
+colored = "3.0"
+miette = "7.6"
+# testing
+pretty_assertions = "1.4"
 insta = "1.43"
-stdext = "0.3.1"
-toml = "0.8"
+
+# shader parce and transform
+naga = { version = "26.0", features = ["wgsl-in", "wgsl-out"] }
+naga_oil = "0.19"
+wgpu = "26.0"
+wgpu-types = "26.0"
+
+# proc-macro
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = "2.0"
+prettyplease = "0.2"
+
+# regex
+regex = "1.11"
+regex-syntax = "0.8"
+
+# array vec
+smallvec = "1.15"
+smol_str = "0.3"
+
+# utils
+thiserror = "2.0"
+indoc = "2.0"
+stdext = "0.3.3"
+# path utils
+include_absolute_path = "0.1"
+pathdiff = "0.2"
+
+# other
+winit = "0.30"
+toml = "0.9"

@@ -16,5 +16,5 @@ naga_oil.workspace = true
 include_absolute_path.workspace = true
 
 [build-dependencies]
-wgsl_bindgen = { path = "../wgsl_bindgen" }
+wgsl_bindgen = { package = "wesl_bindgen", path = "../wesl_bindgen" }
 miette = { workspace = true, features = ["fancy"] }
