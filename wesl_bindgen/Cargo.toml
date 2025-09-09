@@ -3,11 +3,15 @@ name = "wesl_bindgen"
 authors.workspace = true
 version.workspace = true
 edition.workspace = true
+
 repository.workspace = true
 documentation.workspace = true
+
 license.workspace = true
 publish = true
 description = "Type safe Rust bindings workflow for wesl shaders in wgpu"
+keywords = ["wgpu", "wesl", "build", "shader", "bindings"]
+categories = ["graphics", "development-tools::build-utils", "evelopment-tools::ffi"]
 readme = "../README.md"
 
 [dependencies]

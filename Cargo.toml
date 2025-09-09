@@ -6,7 +6,8 @@ members = ["wesl_bindgen", "example"]
 [workspace.package]
 version = "0.22.0"
 authors = ["TimTheBig", "swoorup(WGSL Fork)", "ScanMountGoat(Original Fork)"]
-edition = "2021"
+edition = "2024"
+
 repository = "https://github.com/TimTheBig/wesl_bindgen"
 license = "MIT"
 documentation = "https://docs.rs/wesl_bindgen"

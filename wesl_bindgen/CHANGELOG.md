@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Brecking
+
+- renamed to `wesl-bindgen`
+- switched to wesl from naga-oil
+
 ## [0.21.1](https://github.com/Swoorup/wgsl-bindgen/compare/wgsl_bindgen-v0.21.0...wgsl_bindgen-v0.21.1) - 2025-08-10
 
 ### Fixed
